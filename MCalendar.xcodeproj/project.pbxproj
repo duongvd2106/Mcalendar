@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090B33CA1DAE302F006A0768 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090B33C91DAE302E006A0768 /* UserNotifications.framework */; };
+		090B33CC1DAE302F006A0768 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090B33CB1DAE302F006A0768 /* UserNotificationsUI.framework */; };
+		090B33CF1DAE302F006A0768 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B33CE1DAE302F006A0768 /* NotificationViewController.swift */; };
+		090B33D21DAE302F006A0768 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090B33D01DAE302F006A0768 /* MainInterface.storyboard */; };
+		090B33D61DAE302F006A0768 /* MCalendarNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 090B33C81DAE302E006A0768 /* MCalendarNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		090B4BD51D9CB92200A8E217 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B4BD41D9CB92200A8E217 /* Event.swift */; };
+		090B4BDB1D9CC95000A8E217 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B4BDA1D9CC95000A8E217 /* EventRepository.swift */; };
+		090B4BDD1D9CFA6E00A8E217 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B4BDC1D9CFA6E00A8E217 /* EventService.swift */; };
+		092079E61DAC81D20039910D /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092079E51DAC81D20039910D /* AboutController.swift */; };
+		094B13931D9B69BF0066084E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B13921D9B69BF0066084E /* MainController.swift */; };
+		094B139B1D9BA4BE0066084E /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B139A1D9BA4BE0066084E /* EventController.swift */; };
+		094B139F1D9BBFF30066084E /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B139C1D9BBFF30066084E /* PopDatePicker.swift */; };
+		094B13A01D9BBFF30066084E /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B139D1D9BBFF30066084E /* PopDateViewController.swift */; };
+		094B13A11D9BBFF30066084E /* PopDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094B139E1D9BBFF30066084E /* PopDateViewController.xib */; };
+		094B13A51D9BC8880066084E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B13A41D9BC8880066084E /* Extension.swift */; };
+		0958CB631D9D254500933A9A /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958CB621D9D254500933A9A /* EventTableViewCell.swift */; };
+		09A4D30E1D9B5C2400D9E9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4D30D1D9B5C2400D9E9C5 /* AppDelegate.swift */; };
+		09A4D3131D9B5C2400D9E9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A4D3111D9B5C2400D9E9C5 /* Main.storyboard */; };
+		09A4D3161D9B5C2400D9E9C5 /* MCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09A4D3141D9B5C2400D9E9C5 /* MCalendar.xcdatamodeld */; };
+		09A4D3181D9B5C2400D9E9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A4D3171D9B5C2400D9E9C5 /* Assets.xcassets */; };
+		09A4D31B1D9B5C2400D9E9C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A4D3191D9B5C2400D9E9C5 /* LaunchScreen.storyboard */; };
+		9906B8FEB6A2F4CD089A46FC /* Pods_MCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF8C149CDA9C7D4BC1097F6 /* Pods_MCalendar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090B33D41DAE302F006A0768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09A4D3021D9B5C2400D9E9C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090B33C71DAE302E006A0768;
+			remoteInfo = MCalendarNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		090B33DA1DAE302F006A0768 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				090B33D61DAE302F006A0768 /* MCalendarNotification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		090B33C31DADE149006A0768 /* MCalendar 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MCalendar 3.xcdatamodel"; sourceTree = "<group>"; };
+		090B33C81DAE302E006A0768 /* MCalendarNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MCalendarNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		090B33C91DAE302E006A0768 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		090B33CB1DAE302F006A0768 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		090B33CE1DAE302F006A0768 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		090B33D11DAE302F006A0768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		090B33D31DAE302F006A0768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090B4BD41D9CB92200A8E217 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		090B4BDA1D9CC95000A8E217 /* EventRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
+		090B4BDC1D9CFA6E00A8E217 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		092079E51DAC81D20039910D /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		094B13921D9B69BF0066084E /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		094B139A1D9BA4BE0066084E /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		094B139C1D9BBFF30066084E /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopDatePicker.swift; path = PopDatePicker/PopDatePicker.swift; sourceTree = "<group>"; };
+		094B139D1D9BBFF30066084E /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopDateViewController.swift; path = PopDatePicker/PopDateViewController.swift; sourceTree = "<group>"; };
+		094B139E1D9BBFF30066084E /* PopDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopDateViewController.xib; path = PopDatePicker/PopDateViewController.xib; sourceTree = "<group>"; };
+		094B13A41D9BC8880066084E /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		0958CB621D9D254500933A9A /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		09A4D30A1D9B5C2400D9E9C5 /* MCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A4D30D1D9B5C2400D9E9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09A4D3121D9B5C2400D9E9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09A4D3151D9B5C2400D9E9C5 /* MCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MCalendar.xcdatamodel; sourceTree = "<group>"; };
+		09A4D3171D9B5C2400D9E9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09A4D31A1D9B5C2400D9E9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09A4D31C1D9B5C2400D9E9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F905B41DA230CF001CB112 /* MCalendar 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MCalendar 2.xcdatamodel"; sourceTree = "<group>"; };
+		73459D1BF34BB00971CD9AEC /* Pods-MCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCalendar/Pods-MCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		9AF8C149CDA9C7D4BC1097F6 /* Pods_MCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BFB3911ECA0F58B7857AC0 /* Pods-MCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCalendar/Pods-MCalendar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090B33C51DAE302E006A0768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090B33CC1DAE302F006A0768 /* UserNotificationsUI.framework in Frameworks */,
+				090B33CA1DAE302F006A0768 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A4D3071D9B5C2400D9E9C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9906B8FEB6A2F4CD089A46FC /* Pods_MCalendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090B33CD1DAE302F006A0768 /* MCalendarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				090B33CE1DAE302F006A0768 /* NotificationViewController.swift */,
+				090B33D01DAE302F006A0768 /* MainInterface.storyboard */,
+				090B33D31DAE302F006A0768 /* Info.plist */,
+			);
+			path = MCalendarNotification;
+			sourceTree = "<group>";
+		};
+		090B4BD01D9CB8B400A8E217 /* DBComponent */ = {
+			isa = PBXGroup;
+			children = (
+				090B4BD41D9CB92200A8E217 /* Event.swift */,
+				090B4BDA1D9CC95000A8E217 /* EventRepository.swift */,
+				090B4BDC1D9CFA6E00A8E217 /* EventService.swift */,
+			);
+			name = DBComponent;
+			sourceTree = "<group>";
+		};
+		093442A51DAF484700323204 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				092079E51DAC81D20039910D /* AboutController.swift */,
+				094B139A1D9BA4BE0066084E /* EventController.swift */,
+				094B13921D9B69BF0066084E /* MainController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		094B13A21D9BBFFA0066084E /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0958CB621D9D254500933A9A /* EventTableViewCell.swift */,
+				094B139C1D9BBFF30066084E /* PopDatePicker.swift */,
+				094B139D1D9BBFF30066084E /* PopDateViewController.swift */,
+				094B139E1D9BBFF30066084E /* PopDateViewController.xib */,
+			);
+			name = UIComponent;
+			sourceTree = "<group>";
+		};
+		094B13A31D9BC8680066084E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				094B13A41D9BC8880066084E /* Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		09A4D3011D9B5C2400D9E9C5 = {
+			isa = PBXGroup;
+			children = (
+				09A4D30C1D9B5C2400D9E9C5 /* MCalendar */,
+				090B33CD1DAE302F006A0768 /* MCalendarNotification */,
+				09A4D30B1D9B5C2400D9E9C5 /* Products */,
+				21DE7CAC697E7781E7736088 /* Pods */,
+				6DCD1FC11600361D7BAF897C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09A4D30B1D9B5C2400D9E9C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A4D30A1D9B5C2400D9E9C5 /* MCalendar.app */,
+				090B33C81DAE302E006A0768 /* MCalendarNotification.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09A4D30C1D9B5C2400D9E9C5 /* MCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				093442A51DAF484700323204 /* Controller */,
+				090B4BD01D9CB8B400A8E217 /* DBComponent */,
+				094B13A31D9BC8680066084E /* Extension */,
+				094B13A21D9BBFFA0066084E /* UIComponent */,
+				09A4D30D1D9B5C2400D9E9C5 /* AppDelegate.swift */,
+				09A4D3111D9B5C2400D9E9C5 /* Main.storyboard */,
+				09A4D3171D9B5C2400D9E9C5 /* Assets.xcassets */,
+				09A4D3191D9B5C2400D9E9C5 /* LaunchScreen.storyboard */,
+				09A4D31C1D9B5C2400D9E9C5 /* Info.plist */,
+				09A4D3141D9B5C2400D9E9C5 /* MCalendar.xcdatamodeld */,
+			);
+			path = MCalendar;
+			sourceTree = "<group>";
+		};
+		21DE7CAC697E7781E7736088 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73459D1BF34BB00971CD9AEC /* Pods-MCalendar.debug.xcconfig */,
+				A3BFB3911ECA0F58B7857AC0 /* Pods-MCalendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DCD1FC11600361D7BAF897C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF8C149CDA9C7D4BC1097F6 /* Pods_MCalendar.framework */,
+				090B33C91DAE302E006A0768 /* UserNotifications.framework */,
+				090B33CB1DAE302F006A0768 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090B33C71DAE302E006A0768 /* MCalendarNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090B33D71DAE302F006A0768 /* Build configuration list for PBXNativeTarget "MCalendarNotification" */;
+			buildPhases = (
+				090B33C41DAE302E006A0768 /* Sources */,
+				090B33C51DAE302E006A0768 /* Frameworks */,
+				090B33C61DAE302E006A0768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCalendarNotification;
+			productName = MCalendarNotification;
+			productReference = 090B33C81DAE302E006A0768 /* MCalendarNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		09A4D3091D9B5C2400D9E9C5 /* MCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A4D31F1D9B5C2400D9E9C5 /* Build configuration list for PBXNativeTarget "MCalendar" */;
+			buildPhases = (
+				ABAE7BB5C67F12C875386ED5 /* [CP] Check Pods Manifest.lock */,
+				09A4D3061D9B5C2400D9E9C5 /* Sources */,
+				09A4D3071D9B5C2400D9E9C5 /* Frameworks */,
+				09A4D3081D9B5C2400D9E9C5 /* Resources */,
+				635B6F097F4A207115AA7270 /* [CP] Embed Pods Frameworks */,
+				A8046D08A466B95C368D9E20 /* [CP] Copy Pods Resources */,
+				090B33DA1DAE302F006A0768 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090B33D51DAE302F006A0768 /* PBXTargetDependency */,
+			);
+			name = MCalendar;
+			productName = MCalendar;
+			productReference = 09A4D30A1D9B5C2400D9E9C5 /* MCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09A4D3021D9B5C2400D9E9C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Luvina;
+				TargetAttributes = {
+					090B33C71DAE302E006A0768 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = U4VK53ZU2X;
+						ProvisioningStyle = Automatic;
+					};
+					09A4D3091D9B5C2400D9E9C5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = U4VK53ZU2X;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 09A4D3051D9B5C2400D9E9C5 /* Build configuration list for PBXProject "MCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09A4D3011D9B5C2400D9E9C5;
+			productRefGroup = 09A4D30B1D9B5C2400D9E9C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09A4D3091D9B5C2400D9E9C5 /* MCalendar */,
+				090B33C71DAE302E006A0768 /* MCalendarNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090B33C61DAE302E006A0768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090B33D21DAE302F006A0768 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A4D3081D9B5C2400D9E9C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A4D31B1D9B5C2400D9E9C5 /* LaunchScreen.storyboard in Resources */,
+				09A4D3181D9B5C2400D9E9C5 /* Assets.xcassets in Resources */,
+				094B13A11D9BBFF30066084E /* PopDateViewController.xib in Resources */,
+				09A4D3131D9B5C2400D9E9C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		635B6F097F4A207115AA7270 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCalendar/Pods-MCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8046D08A466B95C368D9E20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCalendar/Pods-MCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABAE7BB5C67F12C875386ED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090B33C41DAE302E006A0768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090B33CF1DAE302F006A0768 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A4D3061D9B5C2400D9E9C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090B4BD51D9CB92200A8E217 /* Event.swift in Sources */,
+				0958CB631D9D254500933A9A /* EventTableViewCell.swift in Sources */,
+				094B139F1D9BBFF30066084E /* PopDatePicker.swift in Sources */,
+				09A4D3161D9B5C2400D9E9C5 /* MCalendar.xcdatamodeld in Sources */,
+				094B13A51D9BC8880066084E /* Extension.swift in Sources */,
+				090B4BDB1D9CC95000A8E217 /* EventRepository.swift in Sources */,
+				094B13A01D9BBFF30066084E /* PopDateViewController.swift in Sources */,
+				094B13931D9B69BF0066084E /* MainController.swift in Sources */,
+				094B139B1D9BA4BE0066084E /* EventController.swift in Sources */,
+				090B4BDD1D9CFA6E00A8E217 /* EventService.swift in Sources */,
+				09A4D30E1D9B5C2400D9E9C5 /* AppDelegate.swift in Sources */,
+				092079E61DAC81D20039910D /* AboutController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090B33D51DAE302F006A0768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090B33C71DAE302E006A0768 /* MCalendarNotification */;
+			targetProxy = 090B33D41DAE302F006A0768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		090B33D01DAE302F006A0768 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090B33D11DAE302F006A0768 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		09A4D3111D9B5C2400D9E9C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A4D3121D9B5C2400D9E9C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09A4D3191D9B5C2400D9E9C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A4D31A1D9B5C2400D9E9C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090B33D81DAE302F006A0768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U4VK53ZU2X;
+				INFOPLIST_FILE = MCalendarNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lvn.duongvd.MCalendar.MCalendarNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		090B33D91DAE302F006A0768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U4VK53ZU2X;
+				INFOPLIST_FILE = MCalendarNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lvn.duongvd.MCalendar.MCalendarNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		09A4D31D1D9B5C2400D9E9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+				"VALID_ARCHS[sdk=iphoneos*]" = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		09A4D31E1D9B5C2400D9E9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+				"VALID_ARCHS[sdk=iphoneos*]" = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		09A4D3201D9B5C2400D9E9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73459D1BF34BB00971CD9AEC /* Pods-MCalendar.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4VK53ZU2X;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lvn.duongvd.MCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09A4D3211D9B5C2400D9E9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3BFB3911ECA0F58B7857AC0 /* Pods-MCalendar.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4VK53ZU2X;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lvn.duongvd.MCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090B33D71DAE302F006A0768 /* Build configuration list for PBXNativeTarget "MCalendarNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090B33D81DAE302F006A0768 /* Debug */,
+				090B33D91DAE302F006A0768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A4D3051D9B5C2400D9E9C5 /* Build configuration list for PBXProject "MCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A4D31D1D9B5C2400D9E9C5 /* Debug */,
+				09A4D31E1D9B5C2400D9E9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A4D31F1D9B5C2400D9E9C5 /* Build configuration list for PBXNativeTarget "MCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A4D3201D9B5C2400D9E9C5 /* Debug */,
+				09A4D3211D9B5C2400D9E9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09A4D3141D9B5C2400D9E9C5 /* MCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				090B33C31DADE149006A0768 /* MCalendar 3.xcdatamodel */,
+				09F905B41DA230CF001CB112 /* MCalendar 2.xcdatamodel */,
+				09A4D3151D9B5C2400D9E9C5 /* MCalendar.xcdatamodel */,
+			);
+			currentVersion = 09A4D3151D9B5C2400D9E9C5 /* MCalendar.xcdatamodel */;
+			path = MCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09A4D3021D9B5C2400D9E9C5 /* Project object */;
+}

@@ -1,0 +1,28 @@
+PODS:
+  - CVCalendar (1.4.0)
+  - GoogleMaps (2.1.0):
+    - GoogleMaps/Maps (= 2.1.0)
+  - GoogleMaps/Base (2.1.0)
+  - GoogleMaps/Maps (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - GooglePlaces (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+
+DEPENDENCIES:
+  - CVCalendar (~> 1.4.0)
+  - GoogleMaps
+  - GooglePlaces
+  - MagicalRecord
+
+SPEC CHECKSUMS:
+  CVCalendar: ec1a06a508f99d8e5067258754f811a8a1433a3f
+  GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
+  GooglePlaces: 16e96266483b8010e9f275399403647978523c86
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+
+PODFILE CHECKSUM: 0845c6a7c91085899f3804c463cf58700769fd2e
+
+COCOAPODS: 1.0.1
